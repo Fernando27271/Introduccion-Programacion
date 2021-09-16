@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+Ingrese dos notas de un alumno, calcule su promedio; si el promedio es igual o mayor a 13 mostrar un mensaje de APROBO
+*/
+var nota1,nota2,promedioNotas;
+nota1=parseInt(prompt("Ingrese Nota 1"));
+nota2=parseInt(prompt("Inrese Nota 2"));
+promedioNotas=(nota1+nota2)/2;
+if(promedioNotas>=13)
+{
+    document.write("Su promedio es: "+promedioNotas+"<br>");
+    document.write("Por lo tanto aprobó");
+}
+    </script>
+</body>
+</html>

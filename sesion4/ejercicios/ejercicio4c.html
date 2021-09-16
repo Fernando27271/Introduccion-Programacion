@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+Ingresar un número de 4 dígitos luego mostrar:
+La suma de los 3 primeros dígitos elevado al 4to.
+*/
+num=parseInt(prompt("Ingrese el número de cuatro cifras"));//1234
+unidad=num%10;//4
+cociente1=Math.floor(num/10);//123
+decena=cociente1%10;//3
+cociente2=Math.floor(cociente1/10);//12
+centena=cociente2%10;//2
+millar=Math.floor(cociente2/10);//1
+total=Math.pow(millar,4)+Math.pow(centena,4)+Math.pow(decena,4);
+document.write(total);
+    </script>
+</body>
+</html>
