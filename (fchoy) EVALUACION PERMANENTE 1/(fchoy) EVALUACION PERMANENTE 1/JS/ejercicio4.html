@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numero;
+
+        numero=parseInt(prompt("Ingresar número de 3 cifras"));//123
+        unidad=numero%10//3
+        coeficiente=Math.floor(numero/10);//12
+        decena=coeficiente%10;//2
+        centena=Math.floor(coeficiente/10);//1
+        numInverti=unidad*100+decena*10+centena;//321
+
+        document.write("Número ingresado: "+numero);
+        document.write("<p/>"+"Número invertido: "+numInverti);
+    </script>
+</body>
+</html>
