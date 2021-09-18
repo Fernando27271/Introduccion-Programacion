@@ -8,7 +8,34 @@
 </head>
 <body>
     <script>
-        
+        var numero,unidad,coeficiente1,decena,coeficiente2,centena,millar,numInverti,suma;
+
+        numero=parseInt(prompt("Ingresar un numero de 4 digitos"));//1234
+        unidad=numero%10;//4
+        coeficiente1=Math.floor(numero/10);//123
+        decena=coeficiente1%10;//3
+        coeficiente2=Math.floor(coeficiente1/10);//12
+        centena=coeficiente2%10;//2
+        millar=Math.floor(coeficiente2/10);//1
+
+        //EL número a la inversa siempre y cuando la suma de los dígitos es par
+        numInverti=unidad*1000+decena*100+centena*10+millar;//4321
+        suma=unidad+decena+centena+millar;
+
+        document.write("Numero ingresado: "+numero+"<br>");
+        document.write("Suma de digitos: "+suma+"<br>");
+        if (suma%2==0) 
+        {
+            document.write("Numero invertido: "+numInverti+"<br>")
+        }
+
+        //Un mensaje que muestre si el número es capicúa
+        if (numero==numInverti) {
+            document.write("El número ingresado SI es capicúa")
+        } else 
+        {
+            document.write("El numero ingresado NO es capicúa")    
+        } 
     </script>
 </body>
 </html>

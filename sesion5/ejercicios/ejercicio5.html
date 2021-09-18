@@ -8,7 +8,20 @@
 </head>
 <body>
     <script>
-        
+        var edad
+
+        edad=parseInt(prompt("Ingresar edad"));
+
+        document.write("Edad: "+edad+ "<br>");
+        if (edad>=18) {
+            document.write("Es mayor de edad<br>")
+            document.write("<img src='dni-azul.jpg'")
+        } 
+        else 
+        {
+            document.write("Es menor de edad<br>")
+            document.write("<img src='dni-amarillo.jpg' height=183 width=278")
+        }
     </script>
 </body>
 </html>
