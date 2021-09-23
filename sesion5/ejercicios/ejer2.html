@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var codigo, nombre, precio, categoria, cantidad, monto;
+        codigo=parseInt(prompt("Ingresar código del producto"));
+        nombre=prompt("Ingresar nombre del producto");
+        precio=parseInt(prompt("Ingresar precio de costo"));
+        categoria=prompt("Ingresar categoria del producto","A,B o C");
+        cantidad=parseInt(prompt("Ingresar la cantidad de unidades a comprar"));
+
+        if (categoria.toUpperCase()=="A" || categoria.toUpperCase()=="B" || categoria.toUpperCase()=="C") 
+        {
+            document.write("Codigo: "+codigo+"<br>");
+            document.write("Nombre: "+nombre+"<br>");
+            document.write("Precio: "+precio+"<br>");
+            document.write("Categoria: "+categoria.toUpperCase()+"<br>");
+            document.write("Cantidad: "+cantidad+"<br>"+"<br>");
+
+            if (categoria.toUpperCase()=="A") {
+            monto=cantidad*1.15*precio;
+            document.write("Monto: "+monto);
+            } 
+            else 
+            {
+                if (categoria.toUpperCase()=="B") {
+                    monto=cantidad*1.10*precio;
+                    document.write("Monto: "+monto);
+                } 
+                else 
+                {
+                    monto=cantidad*1.05*precio;
+                    document.write("Monto: "+monto);
+                }    
+            }
+        } 
+        else 
+        {
+            document.write("EJECUTAR DE NUEVO EL PROGRAMA");
+        }
+        
+        
+    </script>
+</body>
+</html>

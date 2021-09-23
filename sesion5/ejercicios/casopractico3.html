@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+Ingresar un número, solamente si el número es menor a 500 hallar y mostrar el número anterior al ingresado; caso contrario, mostrar el número siguiente al ingresado.
+*/
+var num, anterior, siguiente;
+num=parseInt(prompt("Ingrese un número"));
+if (num<500) {
+    anterior=num-1;
+    document.write("Ud. Ingreso el número "+num+"<br>");
+    document.write("El número anterior al ingresado es "+anterior+"<br>");
+}
+else
+{
+    siguiente=num+1;
+    document.write("Ud. Ingreso el número "+num+"<br>");
+    document.write("El número siguiente al ingresado es "+siguiente+"<br>");
+}
+    </script>
+</body>
+</html>

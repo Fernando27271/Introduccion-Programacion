@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+Ingresar un número de 3 dígitos y determinar si el número es capicúa o no es capicúa. Acompañar con una imagen en ambos casos y el body de color a su elección.
+*/
+var num,centena,resto,decena,unidad;
+num=parseInt(prompt("Ingrese un número de 3 digitos"));//123
+if (num>99 && num<=999) 
+{
+    centena=Math.floor(num/100);//1
+    resto=Math.floor(num%100);//23
+    decena=Math.floor(resto/10);//2
+    unidad=Math.floor(resto%10);//3
+    if (centena==unidad) 
+    {
+        document.write("<h1>El número es capicúa</h1>"+"<br>");
+        document.write('<img src="hola.gif">');    
+    }
+    else
+    {
+        document.write("<h1>El número no es capicúa</h1>"+"<br>");
+        document.write('<img src="adios.gif">');
+    }    
+
+}
+else
+{
+    document.write("<h1>VUELVE A EJECUTAR,"+"<br>"+"SOLO INGRESA UN NÚMERO DE 3 DIGITOS</h1>"+"<br>");
+
+}
+    </script>
+</body>
+</html>
