@@ -7,6 +7,60 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        var num1, num2, num3;
+        num1=parseInt(prompt("Ingresar primer numero entero"));
+        num2=parseInt(prompt("Ingresar segundo numero entero"));
+        num3=parseInt(prompt("Ingresar tercer numero entero"));
+
+
+        if (num2<num3 && num2>num1) 
+        {
+            document.write("<h1>"+num1+", ");
+            document.write(+num2+", ");
+            document.write(+num3+"</h1>");
+        } 
+        else {
+            if (num1<num3 && num1>num2) 
+            {
+                document.write("<h1>"+num2+", ");
+                document.write(+num1+", ");
+                document.write(+num3+"</h1>");
+            } 
+            else 
+            {
+                if (num3<num2 && num3>num1) 
+                {
+                    document.write("<h1>"+num1+", ");
+                    document.write(+num3+", ");
+                    document.write(+num2+"</h1>");
+                } 
+                else 
+                {
+                    if (num1<num2 && num1>num3) 
+                    {
+                        document.write("<h1>"+num3+", ");
+                        document.write(+num1+", ");
+                        document.write(+num2+"</h1>");
+                    } 
+                    else 
+                    {
+                        if (num3<num1 && num3>num2) 
+                        {
+                            document.write("<h1>"+num2+", ");
+                            document.write(+num3+", ");
+                            document.write(+num1+"</h1>");
+                        } 
+                        else 
+                        {
+                            document.write("<h1>"+num3+", ");
+                            document.write(+num2+", ");
+                            document.write(+num1+"</h1>");
+                        }
+                    }
+                }
+            }    
+        }
+    </script>
 </body>
 </html>

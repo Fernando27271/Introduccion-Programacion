@@ -7,6 +7,39 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        var cantidadVendida, montoComision; 
+        cantidadVendida=parseInt(prompt("Ingresar cantidad vendida por el ejecutivo"));
+
+        if (cantidadVendida>=2000) 
+        {
+            if (cantidadVendida<10000) 
+            {
+                montoComision=cantidadVendida*107/100;
+                document.write("Monto comision: "+montoComision);
+            } 
+            else 
+            {
+                if (cantidadVendida>=10001 && cantidadVendida<=20000) 
+                {
+                    montoComision=cantidadVendida*110/100;
+                    document.write("Monto comision: "+montoComision);
+                }            
+                else 
+                {
+                    montoComision=cantidadVendida*115/100;
+                    document.write("Monto comision: "+montoComision);
+                }
+            }
+        } 
+        else 
+        {
+            document.write("NO RECIBE COMISIÓN")
+        }
+
+
+
+        
+    </script>
 </body>
 </html>

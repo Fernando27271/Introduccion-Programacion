@@ -7,6 +7,40 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        var num1, num2, num3;
+        num1=Math.floor(Math.random()*6)+1;
+        num2=Math.floor(Math.random()*6)+1;
+        num3=Math.floor(Math.random()*6)+1;
+
+        document.write("PRESIONAR F5 PARA LANZAR DADO"+"<br>"+"<br>");
+
+        document.write("Dado 1: "+num1+"<br>");
+        document.write("Dado 2: "+num2+"<br>");
+        document.write("Dado 3: "+num3+"<br>"+"<br>");
+
+        if (num1==6 && num2==6 && num3==6) 
+        {
+            document.write("Seis en los tres dados, Excelente");
+        } 
+        else 
+        {
+            if ((num1==6 &&  num2==6) || (num2==6 && num3==6) || (num3==6 && num1==6))
+            {
+                document.write("Seis en dos dados (de los 3 lanzados), Muy bien");
+            } 
+            else 
+            {
+                if (num1==6 || num2==6 || num3==6)
+                {
+                    document.write("Seis en un dado (de los 3 lanzados), Regular");
+                } 
+                else 
+                {
+                    document.write("Ningún seis (de los 3 lanzados), Pésimo");
+                }
+            }
+        }
+    </script>
 </body>
 </html>

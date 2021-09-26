@@ -7,6 +7,112 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        var codigoAlumno, nombre, turno, numeroCursos, estado, montoMatricula, montoTotal, pagoCurso;
+        codigoAlumno=parseInt(prompt("Ingresar código del alummno"));
+        nombre=prompt("Ingresar nombres y apellidos");
+        turno=prompt("Ingresar turno","TURNO MAÑANA / TURNO NOCHE");
+        numeroCursos=parseInt(prompt("Ingresar número de cursos a llevar"));
+        estado=prompt("Ingresar estado","A / B / C");
+
+        document.write("Codigo del alummno: "+codigoAlumno+"<br>");
+        document.write("Nombres y apellidos: "+nombre+"<br>");
+        document.write("Turno: "+turno.toUpperCase()+"<br>");
+        document.write("Numero de cursos: "+numeroCursos+"<br>");
+        document.write('Estado: "'+estado.toUpperCase()+'"<br>'+'<br>');
+
+        if (turno.toUpperCase()=="TURNO MAÑANA" && estado.toUpperCase()=="A")
+        {   
+            montoMatricula=350;
+            montoTotal=montoMatricula;
+            document.write("<h3>Monto total: S/ "+montoTotal+"</h3>");
+        } 
+        else 
+        {
+            if (turno.toUpperCase()=="TURNO NOCHE" && estado.toUpperCase()=="A") 
+            {
+                montoMatricula=250;
+                montoTotal=montoMatricula;
+                document.write("<h3>Monto total: S/ "+montoTotal+"</h3>");
+            } 
+            else 
+            {
+                if (turno.toUpperCase()=="TURNO MAÑANA" && numeroCursos>7 && estado.toUpperCase()=="B") 
+                {
+                    montoMatricula=350;
+                    pagoCurso=200-25;
+                    montoTotal=(numeroCursos*pagoCurso)/2+montoMatricula;
+                    document.write("<h3>Monto total: S/ "+montoTotal+"</h3>");
+                } 
+                else 
+                {
+                    if (turno.toUpperCase()=="TURNO NOCHE" && numeroCursos>7 && estado.toUpperCase()=="B") 
+                    {
+                        montoMatricula=250;
+                        pagoCurso=200-25;
+                        montoTotal=(numeroCursos*pagoCurso)/2+montoMatricula;
+                        document.write("<h3>Monto total: S/ "+montoTotal+"</h3>");
+                    } 
+                    else 
+                    {
+                        if (turno.toUpperCase()=="TURNO MAÑANA" && numeroCursos<=7 && estado.toUpperCase()=="B") 
+                        {
+                            montoMatricula=350;
+                            pagoCurso=200;
+                            montoTotal=(numeroCursos*pagoCurso)/2+montoMatricula;
+                            document.write("<h3>Monto total: S/ "+montoTotal+"</h3>");
+                        } 
+                        else 
+                        {
+                            if (turno.toUpperCase()=="TURNO NOCHE" && numeroCursos<=7 && estado.toUpperCase()=="B") 
+                            {
+                                montoMatricula=250;
+                                pagoCurso=200;
+                                montoTotal=(numeroCursos*pagoCurso)/2+montoMatricula;
+                                document.write("<h3>Monto total: S/ "+montoTotal+"</h3>");
+                            } 
+                            else 
+                            {
+                                if (turno.toUpperCase()=="TURNO MAÑANA" && numeroCursos>7 && estado.toUpperCase()=="C") 
+                                {
+                                    montoMatricula=350;
+                                    pagoCurso=200-25;
+                                    montoTotal=(numeroCursos*pagoCurso)+montoMatricula;
+                                    document.write("<h3>Monto total: S/ "+montoTotal+"</h3>");
+                                } 
+                                else 
+                                {
+                                    if (turno.toUpperCase()=="TURNO NOCHE" && numeroCursos>7 && estado.toUpperCase()=="C")
+                                    {
+                                        montoMatricula=250;
+                                        pagoCurso=200-25;
+                                        montoTotal=(numeroCursos*pagoCurso)+montoMatricula;
+                                        document.write("<h3>Monto total: S/ "+montoTotal+"</h3>");
+                                    } 
+                                    else 
+                                    {
+                                        if (turno.toUpperCase()=="TURNO MAÑANA" && numeroCursos<=7 && estado.toUpperCase()=="C")
+                                        {
+                                            montoMatricula=350;
+                                            pagoCurso=200;
+                                            montoTotal=(numeroCursos*pagoCurso)+montoMatricula;
+                                            document.write("<h3>Monto total: S/ "+montoTotal+"</h3>");
+                                        } 
+                                        else 
+                                        {
+                                            montoMatricula=250;
+                                            pagoCurso=200;
+                                            montoTotal=(numeroCursos*pagoCurso)+montoMatricula;
+                                            document.write("<h3>Monto total: S/ "+montoTotal+"</h3>");
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 </html>
