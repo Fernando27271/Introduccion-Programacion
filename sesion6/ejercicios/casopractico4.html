@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+Ingresar el código del empleado, apellidos y nombres, sueldo básico, área de trabajo 
+y número de hijos. Si el área ingresada es sistemas tendrá una bonificación del 15% sobre el básico y si es Contabilidad será de 5%, además tendrá una bonificación de 
+S/ 150 por cada hijo sólo para aquellos empleados que tengan 2 hijos o más. Calcule su sueldo neto.
+*/
+var cod, nom, sueld, area, nroh, sueldN;
+cod=prompt("Ingresar el codigo del empleado");
+nom=prompt("Ingresar nombres y apellidos");
+sueld=parseInt(prompt("Ingresar sueldo basico"));
+area=prompt("Ingresar area de trabajo");
+nroh=parseInt(prompt("Ingresar numero de hijos"));
+
+if (area.toUpperCase()=="SISTEMAS" && nroh<2) 
+{
+    sueldN=sueld*115/100;
+} 
+else 
+{
+    if (area.toUpperCase()=="CONTABILIDAD" && nroh<2) 
+    {
+        sueldN=sueld*105/100;
+    } 
+    else 
+    {
+        if (area.toUpperCase()=="SISTEMAS" && nroh>=2) 
+        {
+            sueldN=sueld*115/100+(150*nroh);
+        } 
+        else 
+        {
+            if (area.toUpperCase()=="CONTABILIDAD" && nroh>=2) 
+            {
+                sueldN=sueld*105/100+(150*nroh);
+            } 
+            else
+            {
+                sueldN=sueld;
+            }
+        }
+    }    
+}
+document.write("Codigo: "+cod+"<br>");
+document.write("Nombres y apellidos: "+nom+"<br>");
+document.write("Sueldo basico: "+sueld+"<br>");
+document.write("Area: "+area+"<br>");
+document.write("Numero de hijos: "+nroh+"<br>");
+document.write("EL sueldo neto es: "+sueldN);
+    </script>
+</body>
+</html>

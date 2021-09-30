@@ -8,6 +8,7 @@
 </head>
 <body>
     <script>
+        /*
         var cantidadLlantas, montoTotal, costoLlanta;
         cantidadLlantas=parseInt(prompt("Ingresar la cantidad de llantas a comprar"));
         costoLlanta=50
@@ -35,7 +36,40 @@
         } 
         else 
         {
-            document.write("<h1>SU COMPRA NO TIENE DESCUENTO</h1>")
+            montoTotal=cantidadLlantas*costoLlanta;
+            document.write("<h1>SU COMPRA NO TIENE DESCUENTO</h1>");
+            document.write("<h2>Monto total a pagar por la compra de "+cantidadLlantas+" llantas: </h2>"+"<h1>"+montoTotal+"</h1>");
+        }
+        */
+
+
+        costoLlanta=50;
+        cantidadLlantas=parseInt(prompt("Ingrese la cantidad de llantas"));
+        costoTotal=costoLlanta*cantidadLlantas;
+        if(cantidadLlantas>=3)
+        {
+            if(cantidadLlantas<=5)
+            {
+                pagoTotal=costoTotal-costoTotal*0.08;
+                document.write(pagoTotal);
+            }
+            else
+            {
+                if(cantidadLlantas<=9)
+                {
+                    pagoTotal=costoTotal-costoTotal*0.15;
+                    document.write(pagoTotal)
+                }
+                else
+                {
+                    pagoTotal=costoTotal-costoTotal*0.20;
+                    document.write(pagoTotal)
+                }
+            }
+        }
+        else
+        {
+            document.write(costoTotal);
         }
     </script>
 </body>

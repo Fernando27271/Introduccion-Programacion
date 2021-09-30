@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #ffd800;
+        }
+        .lugar{
+            width: 680px;
+            height: 740px;
+            background-color: #00ff90;
+            text-align: center;
+            margin-left: 50px;
+        }
+        h2{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 26px;
+        }
+    </style>
+</head>
+<body>
+    <div class="lugar">
+        <h1>CONDICION DEL ALUMNO</h1>
+        <script>
+            var promedio;
+            promedio=parseInt(prompt("Ingrese el promedio"));
+            if (promedio== 19 || promedio==20) 
+            {
+                document.write("<h2>Su promedio es excelente</h2>");
+            } 
+            else 
+            {
+                if (promedio==16 || promedio==17 || promedio==18) 
+                {
+                    document.write("<h2>Su promedio es bueno</h2>");
+                } 
+                else 
+                {
+                    if (promedio==13 || promedio==14 || promedio==15) 
+                    {
+                        document.write("<h2>Su promedio es regular</h2>");
+                    }
+                    else
+                    {
+                        document.write("<h2>Su promedio es malo</h2>");
+                    }    
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>

@@ -8,6 +8,7 @@
 </head>
 <body>
     <script>
+        /*
         var cantidadVendida, montoComision; 
         cantidadVendida=parseInt(prompt("Ingresar cantidad vendida por el ejecutivo"));
 
@@ -36,10 +37,34 @@
         {
             document.write("NO RECIBE COMISIÓN")
         }
+        */
 
 
-
-        
+        venta=parseInt(prompt("Cantidad: "));
+        if(venta>=2000)
+        {
+            if(venta<=10000)
+            {
+                comision=0.07;
+            }
+            else
+            {
+                if(venta<=20000)
+                {
+                    comision=0.10;
+                }
+                else
+                {
+                    comision=0.15;
+                }
+            }
+        }
+        else
+        {
+            document.write("NO RECIBE COMISIÓN");
+        }
+        pago=venta*comision;
+        document.write("Monto comision: "+pago);
     </script>
 </body>
 </html>

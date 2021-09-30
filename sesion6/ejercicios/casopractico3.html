@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+Se ingresa la cantidad de cursos a matricular. 
+Si cantidad de cursos es igual a 1 pagará  S/ 450
+Si cantidad de cursos es igual a 2 pagará S/ 800
+Si cantidad de cursos es igual a 3 pagará S/ 1100
+Cualquier otra cantidad pagará S/ 1800
+Mostrar el total a pagar por el alumno de acuerdo a la cantidad de cursos ingresados.
+*/
+var  cc;
+cc=parseInt(prompt("Ingrese la cantidad de cursos a matricular"));
+if(cc==1)
+{
+    document.write("Usted pagará 450");
+}
+else
+{
+    if (cc==2) 
+    {
+        document.write("Usted pagará 800");
+    } 
+    else 
+    {
+        if (cc==3) 
+        {
+            document.write("Usted pagará 1100");
+        } 
+        else 
+        {
+            document.write("Usted pagará 1800");
+        }
+    }
+}
+    </script>
+</body>
+</html>

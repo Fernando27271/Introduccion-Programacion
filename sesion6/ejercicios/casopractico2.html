@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #ffd800;
+        }
+        .lugar{
+            width: 680px;
+            height: 480px;
+            background-color: #00ff90;
+            text-align: center;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="lugar">
+        <h1>PAGO DEL EMPLEADO</h1>
+        <script>
+            /*
+            Se ingresan la cantidad de horas trabajadas y la categoría del empleado.
+                cat A -  S/ 60 la hora
+                cat B – S/ 50 la hora
+                cat C – S/ 40 la hora
+                Cualquier otra categoría S/ 30 la hora
+            Se solicita mostrar el total a pagar según su categoría y la cantidad de horas trabajadas
+            */
+            
+            var ht,ce,tp;
+            ht=parseInt(prompt("Ingrese la cantidad de horas trabajadas"));
+            ce=prompt("Ingrese código del empleado");
+            if (ce.toUpperCase()=="A") 
+            {
+                tp=ht*60;
+            } 
+            else 
+            {
+                if (ce.toUpperCase()=="B") 
+                {
+                    tp=ht*50;
+                } 
+                else 
+                {
+                    if (ce.toUpperCase()=="C") 
+                    {
+                        tp=ht*40;
+                    } 
+                    else 
+                    {
+                        tp=ht*30;
+                    }
+                }
+            }
+
+            document.write("Su categoría es "+ce.toUpperCase()+"<br>");
+            document.write("Trabajó "+ht+" horas"+"<br>");
+            document.write("Su pago es "+tp+" soles");
+        </script>
+    </div>
+</body>
+</html>
