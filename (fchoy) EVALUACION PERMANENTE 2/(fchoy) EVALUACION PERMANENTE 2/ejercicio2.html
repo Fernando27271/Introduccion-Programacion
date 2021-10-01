@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <title>Ejercicio 2</title>
+    <style>
+        body{
+            background-image: url("images/concierto.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        h1{
+            color: white;    
+            margin-top: 0;
+            font-size: 100px;
+            font-family: 'Fjalla One', sans-serif;
+        }
+        h2{
+            color: white;
+            margin-bottom: 0;
+            font-size: 90px;
+            text-transform: uppercase;
+            font-family: 'Fjalla One', sans-serif;
+        }
+        .covertor {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: #0000005e;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="covertor">
+        <script>
+/*
+2.	Nos solicitan diseñar una página web, para la venta de entradas para un concierto. Debemos solicitar el nombre del cliente, cantidad de entradas y el código de descuento. Si el usuario utiliza el código “rock”, se le aplica un descuento del 10% en el total. Considerar que cada entrada cuesta 50 soles. Debemos mostrar cómo resultado el nombre del usuario y el monto final que debe pagar. (7 puntos)
+*/
+            var nombreCliente, cantidadEntradas, codigoDescuento, costoEntrada, monto, montoFinal;
+
+            nombreCliente=prompt("INGRESAR NOMBRE:");
+            cantidadEntradas=parseInt(prompt("INGRESAR CANTIDAD DE ENTRADAS:"));
+            codigoDescuento=prompt("INGRESAR CODIGO DE DESCUENTO:");
+            costoEntrada=50;
+            monto=costoEntrada*cantidadEntradas;
+
+            if (codigoDescuento.toUpperCase()=="ROCK") 
+            {
+                montoFinal=monto*90/100;
+            } 
+            else 
+            {
+                montoFinal=monto;
+            }
+
+            document.write("<h2>"+nombreCliente+"</h2>");
+            document.write("<h1>S/ "+montoFinal+"</h1>");
+        </script>
+    </div>
+</body>
+</html>

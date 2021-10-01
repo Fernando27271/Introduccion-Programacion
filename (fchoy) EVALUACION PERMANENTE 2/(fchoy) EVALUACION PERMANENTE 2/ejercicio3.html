@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <title>Ejercicio 3</title>
+    <style>
+        h1{
+            color: white;    
+            margin-top: 10PX;
+            font-size: 64px;
+            font-family: 'Fjalla One', sans-serif;
+        }
+        h2{
+            color: rgb(231, 231, 231);
+            margin-bottom: 0px;
+            margin-top: 0;
+            font-size: 35px;
+            text-transform: uppercase;
+            font-family: 'Fjalla One', sans-serif;
+        }
+        body{
+            text-align: center;
+            position: relative;
+            background-color: rgba(129, 129, 129, 0.562);
+        }
+        #computadora{
+            margin-top: 80px;
+        }
+        .covertor {
+            position: absolute;
+            top: 22%;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="computadora" align="center">
+        <div class="covertor">
+            <script>
+/*
+3.	En una tienda de venta de computadoras, se realizan descuentos dependiendo del monto de venta, tomar en cuenta lo siguiente:
+Se ingresa el monto de venta y el sistema debe calcular el descuento y restarlo del total. Nos dan los siguientes datos: (7 puntos)
+•	Si el monto es menor que 1000 no hay descuento
+•	Si el monto está entre 1000 y 1500 inclusive, el descuento es de 5%
+•	Si el monto está entre 1500 y 5000 inclusive, el descuento es del 12%
+•	Si el monto está entre 5000 y 10000 inclusive, el descuento es del 19%
+•	Si el monto es mayor de 10000 el descuento es del 25%.
+Por ejemplo, si se ingresa un monto de 6000 el descuento será 1140, y el valor a pagar es 4860. 
+*/
+                var montoVenta, descuento, montoTotal;
+        
+                montoVenta=parseInt(prompt("INGRESAR MONTO DE VENTA:"));
+                
+                if (montoVenta<1000) 
+                {
+                    descuento=0;
+                    montoTotal=montoVenta;
+                } 
+                else 
+                {
+                    if (montoVenta>=1000 && montoVenta<=1500) 
+                    {
+                        descuento=montoVenta*5/100;
+                        montoTotal=montoVenta*95/100;
+                    } else 
+                    {
+                        if (montoVenta>1500 && montoVenta<=5000) 
+                        {
+                            descuento=montoVenta*12/100;
+                            montoTotal=montoVenta*88/100;
+                        } 
+                        else 
+                        {
+                            if (montoVenta>5000 && montoVenta<=10000)  
+                            {
+                                descuento=montoVenta*19/100;
+                                montoTotal=montoVenta*81/100
+                            } 
+                            else 
+                            {
+                                descuento=montoVenta*25/100;
+                                montoTotal=montoVenta*75/100;
+                            }
+                        }
+                    }
+                }
+        
+                document.write("<h2>MONTO: S/ "+montoVenta+"</h2>");
+                document.write("<h2>DESCUENTO: S/ "+descuento+"</h2>");
+                document.write("<h1>MONTO TOTAL: S/ "+montoTotal+"</h1>");
+            </script>
+        </div>
+        <img src="images/computadora.png" alt="" height="700" width="700">
+    </div>
+</body>
+</html>

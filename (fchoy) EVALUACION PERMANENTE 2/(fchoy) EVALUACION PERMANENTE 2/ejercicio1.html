@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <style>
+        h1{
+            color:red;
+            text-align: center;
+        }
+        span{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <script>
+/*
+1.	Diseñe una página que pida ingresar una fecha cualquiera, luego verificar si dicha fecha corresponde a Navidad (se debe cargar por separado el día, el mes y el año). (6 puntos)
+*/
+        var dia, mes, año, fecha;
+
+        dia=parseInt(prompt("INGRESAR DIA:"));
+        mes=prompt("INGRESAR MES:");
+        año=parseInt(prompt("INGRESAR AÑO:"));
+        fecha=dia+" / "+mes.toUpperCase()+" / "+año;
+
+        document.write("<h2>FECHA: "+fecha+"</h2>");
+        if (dia==25 && (mes==12 || mes.toLocaleUpperCase()=="DICIEMBRE")) 
+        { 
+            document.write("<h1>ESTA FECHA<br><span>CORRESPONDE A NAVIDAD</span></h1>");
+            document.write("<div align='center'><img src='images/navidad.jpg'></div>");
+        }
+    </script>
+</body>
+</html>
