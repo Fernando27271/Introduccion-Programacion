@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        var horasTrabajadas, categoriaEmpleado, cantidadAños, sueldo, utilidad;
+        horasTrabajadas=parseInt(prompt("Ingresar la cantidad de horas trabajadas"));
+        categoriaEmpleado=prompt("Ingresar la categoria del empleado","A / B / C");
+        cantidadAños=parseInt(prompt("Ingresar la cantidad de años trabajando en la empresa"));
+
+        if (cantidadAños>=20)
+        {
+            switch(categoriaEmpleado.toUpperCase())
+            {
+                case "A":sueldo=horasTrabajadas*60;break;
+                case "B":sueldo=horasTrabajadas*50; break;
+                case "C":sueldo=horasTrabajadas*40; break;
+                default:sueldo=horasTrabajadas*30;;break;
+            }
+            utilidad=sueldo*5;
+        } 
+        else 
+        {
+            if (cantidadAños>=10 && cantidadAños<20)
+            {
+                switch(categoriaEmpleado.toUpperCase())
+                {
+                    case "A":sueldo=horasTrabajadas*60;break;
+                    case "B":sueldo=horasTrabajadas*50; break;
+                    case "C":sueldo=horasTrabajadas*40; break;
+                    default:sueldo=horasTrabajadas*30;;break;
+                }
+                utilidad=sueldo*4;
+            } 
+            else 
+            {
+                if (cantidadAños<10)
+                {
+                    switch(categoriaEmpleado.toUpperCase())
+                    {
+                        case "A":sueldo=horasTrabajadas*60;break;
+                        case "B":sueldo=horasTrabajadas*50; break;
+                        case "C":sueldo=horasTrabajadas*40; break;
+                        default:sueldo=horasTrabajadas*30;;break;
+                    }
+                    utilidad=sueldo*3;
+                } 
+            }
+        }
+        document.write("Horas trabajadas: "+horasTrabajadas+"<br>");
+        document.write('Categoría: "'+categoriaEmpleado.toUpperCase()+'"<br>');
+        document.write("Tiempo de servicio: "+cantidadAños+"<br>"+"<br>");
+
+        document.write("UTILIDAD: "+utilidad+"<br>");
+        document.write("SUELDO: "+sueldo+"<br>");
+        */
+        
+htrabajadas=parseInt(prompt("Ingrese las horas trabajadas"));
+categoria=prompt("Ingrese la categoría").toUpperCase();
+cantan=parseInt(prompt("Cantidad de años trabajando"));
+switch(categoria)
+{
+    case "A":hora=60;break;
+    case "B":hora=50;break;
+    case "C":hora=40;break;
+    default:hora=30;break;
+}
+if(cantan>=20)
+{
+    cantsueldo=5;
+}
+else
+{
+    if(cantan>=10)
+    {
+        cantsueldo=4;
+    }
+    else
+    {
+        cantsueldo=3;
+    }
+}
+sueldo=(htrabajadas*hora)*cantsueldo;
+document.write("El empleado tiene los siguientes pagos:<br>");
+document.write("Horas trabajadas: "+htrabajadas+"<br>");
+document.write("Categoría: "+categoria+"<br>");
+document.write("Cantidad de años trabajando: "+cantan+"<br>");
+document.write("Pago por hora: "+hora+"<br>");
+document.write("Número de sueldos: "+cantsueldo+"<br>");
+document.write("Sueldo: "+sueldo);
+    </script>
+</body>
+</html>

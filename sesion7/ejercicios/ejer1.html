@@ -8,6 +8,7 @@
 </head>
 <body>
     <script>
+        /*
         var num;
         num=parseInt(prompt("Ingresar número del 1 al 7"));
         switch (num) {
@@ -19,6 +20,59 @@
             case 6: document.write("SABADO"); break;
             case 7: document.write("DOMINGO"); break;
             default: document.write("¡SOLO NÚMEROS DEL 1 AL 7!"); break;
+        }
+        */
+        var num;
+        num=parseInt(prompt("Ingresar número del 1 al 7"));
+        if (num==1) 
+        {
+            document.write("LUNES");
+        } 
+        else 
+        {
+            if (num==2) 
+            {
+                document.write("MARTES");
+            } 
+            else 
+            {
+                if (num==3) 
+                {
+                    document.write("MIERCOLES");
+                } 
+                else 
+                {
+                    if (num==4) 
+                    {
+                        document.write("JUEVES");
+                    } 
+                    else 
+                    {
+                        if (num==5) 
+                        {
+                            document.write("VIERNES");
+                        } 
+                        else 
+                        {
+                            if (num==6) 
+                            {
+                                document.write("SABADO");
+                            } 
+                            else 
+                            {
+                                if (num==7) 
+                                {
+                                    document.write("DOMINGO");
+                                } 
+                                else 
+                                {
+                                    document.write("¡SOLO NÚMEROS DEL 1 AL 7!");
+                                }    
+                            }    
+                        }    
+                    }
+                }
+            }
         }
     </script>
 </body>

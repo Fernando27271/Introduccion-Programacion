@@ -8,6 +8,7 @@
 </head>
 <body>
     <script>
+        /*
         var weight, height, imc, potencia;
         weight=parseFloat(prompt("Ingresar peso en KG"));
         height=parseFloat(prompt("Ingresar estatura en METROS"));
@@ -16,6 +17,7 @@
         /*
         imc=weight/(height*height);
         */
+        /*
         document.write("IMC: "+imc.toFixed(1)+"<br>"+"<br>");
         switch (true){
             case (imc.toFixed(1)<16): document.write("CRITERIO DE INGRESO EN HOSPITAL"); break;
@@ -26,6 +28,64 @@
             case (imc.toFixed(1)>=30 && imc.toFixed(1)<35): document.write("SOBREPRESO CRÓNICO (obesidad de grado II)"); break;
             case (imc.toFixed(1)>=35 && imc.toFixed(1)<=40): document.write("OBESIDAD PREMÓRBIDA (obesidad de grado III)"); break;
             default: document.write("OBESIDAD MÓRBIDA (obesidad de grado IV)"); break;
+        }*/
+        var weight, height, imc, potencia;
+        weight=parseFloat(prompt("Ingresar peso en KG"));
+        height=parseFloat(prompt("Ingresar estatura en METROS"));
+        imc=weight/Math.pow(height,2);
+        /*
+        imc=weight/(height*height);
+        */
+        document.write("IMC: "+imc.toFixed(1)+"<br>"+"<br>");
+        if (imc.toFixed(1)<16) 
+        {
+            document.write("CRITERIO DE INGRESO EN HOSPITAL");
+        } 
+        else 
+        {
+            if (imc.toFixed(1)>=16 && imc.toFixed(1)<17) 
+            {
+                document.write("INFRAPESO");
+            } 
+            else 
+            {
+                if (imc.toFixed(1)>=17 && imc.toFixed(1)<18)
+                {
+                    document.write("BAJO PESO");
+                } 
+                else 
+                {
+                    if (imc.toFixed(1)>=18 && imc.toFixed(1)<25) 
+                    {
+                        document.write("PESO NORMAL (saludable)");
+                    } 
+                    else 
+                    {
+                        if (imc.toFixed(1)>=25 && imc.toFixed(1)<30) 
+                        {
+                            document.write("SOBREPRESO (obesidad de grado I)");
+                        } 
+                        else 
+                        {
+                            if (imc.toFixed(1)>=30 && imc.toFixed(1)<35)
+                            {
+                                document.write("SOBREPRESO CRÓNICO (obesidad de grado II)");
+                            } 
+                            else 
+                            {
+                                if (imc.toFixed(1)>=35 && imc.toFixed(1)<=40) 
+                                {
+                                    document.write("OBESIDAD PREMÓRBIDA (obesidad de grado III)");
+                                } 
+                                else 
+                                {
+                                    document.write("OBESIDAD MÓRBIDA (obesidad de grado IV)");
+                                }    
+                            }    
+                        }    
+                    }
+                }
+            }
         }
     </script>
 </body>

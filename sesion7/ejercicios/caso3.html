@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+El restaurante “Los Comelones del Camino”, desean ingresar un número que representa el día de la semana y nos muestre el plato del día en imagen con su respectivo nombre.
+*/
+var dia;
+dia=parseInt(prompt("Ingresar número del 1 al 7"));
+switch (dia) 
+{
+    case 1:document.write("Es lunes"+"<br>"); 
+    document.write("Dia de tallarines rojos"+"<br>");
+    document.write("<img src='images/tallarines.jpg'>");break;
+
+    case 2:document.write("Es martes"+"<br>"); 
+    document.write("Dia de arroz con pollo"+"<br>");
+    document.write("<img src='images/arrozconpollo.jpg'>");break;
+
+    case 3:document.write("Es miercoles"+"<br>"); 
+    document.write("Dia de ceviche"+"<br>");
+    document.write("<img src='images/ceviche.jpg'>");break;
+
+    case 4:document.write("Es jueves"+"<br>"); 
+    document.write("Dia de pollada"+"<br>");
+    document.write("<img src='images/pollada.jpg'>");break;
+
+    case 5:document.write("Es viernes"+"<br>"); 
+    document.write("Dia de sopa seca"+"<br>");
+    document.write("<img src='images/sopaseca.jpg'>");break;
+
+    case 6:document.write("Es sabado"+"<br>"); 
+    document.write("Dia de pollo a la plancha"+"<br>");
+    document.write("<img src='images/polloplancha.jpg'>");break;
+
+    case 7:document.write("Es domingo"+"<br>"); 
+    document.write("Dia de sancochado"+"<br>");
+    document.write("<img src='images/sancochado.jpg'>");break;
+    default: document.write("Plato no esta en la lista");break;
+}
+    </script>
+</body>
+</html>

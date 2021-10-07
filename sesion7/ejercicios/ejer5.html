@@ -13,6 +13,53 @@
         categoriaEmpleado=prompt("Ingresar la categoria del empleado","A / B / C");
         cantidadAños=parseInt(prompt("Ingresar la cantidad de años trabajando en la empresa"));
         
+
+        if (categoriaEmpleado.toUpperCase()=="A")
+        {   
+            sueldo=horasTrabajadas*80;
+        } 
+        else 
+        {
+            if (categoriaEmpleado.toUpperCase()=="B")
+            {
+                sueldo=horasTrabajadas*60;
+            } 
+            else 
+            {
+                if (categoriaEmpleado.toUpperCase()=="C")
+                {
+                    sueldo=horasTrabajadas*40;
+                }
+                else
+                {
+                    sueldo=horasTrabajadas*30;
+                }
+            }
+        }
+
+        if (cantidadAños>=20)
+        {
+            utilidad=sueldo*5;
+        } 
+        else 
+        {
+            if (cantidadAños>=10 && cantidadAños<20)
+            {
+                utilidad=sueldo*4;
+            } 
+            else 
+            {
+                if (cantidadAños<10)
+                {
+                    utilidad=sueldo*3;
+                } 
+            }
+        }
+
+        document.write("Horas trabajadas: "+horasTrabajadas+"<br>");
+        document.write('Categoría: "'+categoriaEmpleado.toUpperCase()+'"<br>');
+        document.write("Tiempo de servicio: "+cantidadAños+"<br>"+"<br>");
+
         document.write("UTILIDAD: "+utilidad+"<br>");
         document.write("SUELDO: "+sueldo+"<br>");
     </script>    

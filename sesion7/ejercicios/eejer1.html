@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+1.	Se ingresan las 4 notas de un alumno. Hallar y mostrar su promedio. Luego mediante un mensaje mostrar: Si el promedio es 19 o 20	--- “Excelente”
+Si el promedio es 16 o 17 o 18 --- “Bueno”
+Si el promedio es 13 o 14 o 15 --- “Regular”
+Cualquier otro promedio	--- “Malo”
+*/
+/*
+var not1, not2, not3, not4, promedio;
+not1=parseInt(prompt("Ingresar nota 1"));
+not2=parseInt(prompt("Ingresar nota 2"));
+not3=parseInt(prompt("Ingresar nota 3"));
+not4=parseInt(prompt("Ingresar nota 4"));
+promedio=Math.round((not1+not2+not3+not4)/4);
+
+document.write("Nota: "+promedio+"<br>");
+switch (true){
+    case (promedio==20 || promedio==19): document.write("EXCELENTE"); break;
+    case (promedio>=16 && promedio<=18): document.write("BUENO"); break;
+    case (promedio>=13 && promedio<=15): document.write("REGULAR"); break;
+    default: document.write("MALO"); break;
+}
+*/
+nota1=parseInt(prompt("Ingrese la nota 1"));
+nota2=parseInt(prompt("Ingrese la nota 2"));
+nota3=parseInt(prompt("Ingrese la nota 3"));
+nota4=parseInt(prompt("Ingrese la nota 4"));
+promedio=Math.round((nota1+nota2+nota3+nota4)/4);
+switch(promedio)
+{
+    case 20:
+    case 19:
+        mensaje="Excelente";break;
+    case 16:
+    case 17:
+    case 18:
+    mensaje="Bueno";break;
+    case 13:
+    case 14:
+    case 15:
+    mensaje="Regular";break;
+    default: mensaje="Malo";break;
+}
+document.write("El promedio es: "+promedio+" - "+mensaje);
+    </script>
+</body>
+</html>

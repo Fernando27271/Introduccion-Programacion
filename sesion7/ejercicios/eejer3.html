@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        titulo = prompt("Titulo del libro:");
+        autor = prompt("Autor:");
+        editor = prompt("Editorial:");
+        precio = prompt("Precio del libro:");   
+        switch(editor.toUpperCase()){
+            case "ARPA": 
+                switch(autor.toUpperCase()){
+                    case "BACA":case "BANCES":
+                    aumen=30;break;
+                    case "CIRO":case "CUBA":
+                    aumen=20;break;
+                    default:aumen=1;break;
+                }
+            ;break;
+            case "URSA":
+                switch(autor.toUpperCase()){
+                    case "ARROYO": case "ABANTO": 
+                    aumen=25;break;
+                    case "SALAZAR":
+                    aumen=15;break;
+                    
+                }
+                ;break;
+            default:aumen=18;break;
+        }        
+        reajuste=precio+(precio*aumen/100);
+        impuesto=reajuste*1.5/100;
+        precioLibro=reajuste-impuesto;
+        document.write("El titulo del libro es: "+titulo+"<br>");
+        document.write("El autor es: "+autor+"<br>");
+        document.write("Editorial: "+editor+"<br>");
+        document.write("Precio del libro"+precio+"<br>");
+        document.write("Reajuste: "+reajuste+"<br>");
+        document.write("Impuesto a pagar: "+impuesto+"<br>");
+        document.write("Total: "+precioLibro);
+    </script>
+</body>
+</html>

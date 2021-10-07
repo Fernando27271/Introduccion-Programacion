@@ -8,6 +8,7 @@
 </head>
 <body>
     <script>
+        /*
         var fruit;
         fruit=prompt("Ingresar nombre de fruta");
         switch (fruit.toUpperCase()) {
@@ -16,6 +17,38 @@
             case "FRESA": document.write("Es un fruto de color rojo brillante, suculento y fragante que se obtiene de la planta que recibe su mismo nombre. En Occidente es considerada la 'reina de las frutas'.<br><img src='images/fresa.png'>"); break;
             case "PIÑA": document.write("Es una fruta muy apreciada por su exquisito sabor y delicado aroma, que además sorprende por unas afamadas virtudes terapéuticas, algunas de las cuales están aún por demostrar.<br><img src='images/piña.png'>"); break;
             default: document.write("NO ESXISTE DESCRIPCIÓN DE LA FRUTA INGRESADA"); break;
+        }
+        */
+        var fruit;
+        fruit=prompt("Ingresar nombre de fruta");
+        if (fruit.toUpperCase()=="MANZANA") 
+        {
+            document.write("Es una fruta pomácea de forma redonda y sabor muy dulce, dependiendo de la variedad.<br><img src='images/manzana.png'>");
+        } 
+        else 
+        {
+            if (fruit.toUpperCase()=="PLATANO") 
+            {
+                document.write("Es una fruta comestible alargada, botánicamente una baya, producida por varios tipos de grandes plantas herbáceas con flores del género Musa.<br><img src='images/platano.png'>");
+            } 
+            else 
+            {
+                if (fruit.toUpperCase()=="FRESA")  
+                {
+                    document.write("Es un fruto de color rojo brillante, suculento y fragante que se obtiene de la planta que recibe su mismo nombre. En Occidente es considerada la 'reina de las frutas'.<br><img src='images/fresa.png'>");
+                } 
+                else 
+                {
+                    if (fruit.toUpperCase()=="PIÑA") 
+                    {
+                        document.write("Es una fruta muy apreciada por su exquisito sabor y delicado aroma, que además sorprende por unas afamadas virtudes terapéuticas, algunas de las cuales están aún por demostrar.<br><img src='images/piña.png'>");
+                    } 
+                    else 
+                    {
+                        document.write("NO ESXISTE DESCRIPCIÓN DE LA FRUTA INGRESADA");
+                    }
+                }
+            }
         }
     </script>
 </body>
