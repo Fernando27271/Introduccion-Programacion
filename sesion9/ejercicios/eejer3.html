@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var titulo, autor, editorial, precio, reajuste, aumento, impuesto, precio_final;
+        editorial=prompt("Ingresar editorial del libro");
+        autor=prompt("Ingresar autor del libro");
+        titulo=prompt("Ingresar titulo del libro");
+        precio=parseInt(prompt("Ingresar precio del libro"));
+
+        switch (editorial.toUpperCase()) 
+        {
+            case "ARPA": 
+            switch (autor.toUpperCase()) 
+            {
+                case "BACA":
+                case "BANCES":
+                aumento=30/100*precio;break;
+                case "CIRO":
+                case "CUBA":
+                aumento=20/100*precio;break;
+                default: aumento=10/100*precio;break;
+            };break;
+            
+            case "URSA": 
+            switch (autor.toUpperCase()) 
+            {
+                case "ARROYO":
+                case "ABANTO":
+                aumento=25/100*precio;break;
+                case "SALAZAR":
+                aumento=15/100*precio;break;
+            };break;
+        
+            default: aumento=18/100*precio;break;
+        }
+
+        reajuste=precio+aumento;
+        impuesto=reajuste*1.5/100;
+        precio_final=reajuste+impuesto;
+        document.write("El titulo del libro es: "+titulo+"<br>");
+        document.write("El autor es: "+autor+"<br>");
+        document.write("Editorial: "+editorial+"<br>");
+        document.write("Precio del libro: "+precio+"<br>");
+        document.write("Reajuste: "+reajuste+"<br>");
+        document.write("Impuesto a pagar: "+impuesto+"<br>");
+        document.write("Total: "+precio_final);
+    </script>
+</body>
+</html>

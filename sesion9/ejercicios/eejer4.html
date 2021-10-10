@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1, num2, operacion, resultado;
+        num1=parseInt(prompt("Ingresar primer numero"));
+        num2=parseInt(prompt("Ingresar segundo numero"));
+        operacion=prompt("Ingresar tipo de operacion","S / R / M / D");
+
+        switch (operacion.toUpperCase())
+        {
+            case "S": resultado=num1+num2;document.write("RESULTADO: "+resultado);break;
+            case "R": resultado=num1-num2;document.write("RESULTADO: "+resultado);break;
+            case "M": resultado=num1*num2;document.write("RESULTADO: "+resultado);break;
+            case "D": resultado=num1/num2;document.write("RESULTADO: "+resultado);break;
+            default: document.write("NO EXISTE ESA OPCIÓN");break;
+        }
+    </script>
+</body>
+</html>

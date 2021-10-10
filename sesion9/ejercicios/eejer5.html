@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var country;
+        country=prompt("Ingresar nombre de un pais latinomericano");
+        switch (country.toUpperCase()) {
+            case "PERÚ":
+            case "PERU":
+            document.write("PEDRO CASTILLO"+"<br>");
+            document.write("<img src='images/peru.png' border='3'>"); break;
+            case "CHILE": 
+            document.write("SEBASTIAN PIÑERA"+"<br>");
+            document.write("<img src='images/chile.png' border='3'>"); break;
+            case "BOLIVIA": 
+            document.write("LUIS ARCE CATACORA"+"<br>")
+            document.write("<img src='images/bolivia.png' border='3'>"); break;
+            case "ARGENTINA": 
+            document.write("ALBERTO FERNANDEZ"+"<br>")
+            document.write("<img src='images/argentina.png' border='3'>"); break;
+            default: document.write("NO EXISTE INFORMACION DEL PAIS INGRESADO");break;
+        }
+    </script>
+</body>
+</html>
