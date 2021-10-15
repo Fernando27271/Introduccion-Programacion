@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 1</title>
+    <style>
+        h1{
+            color: rgb(2, 2, 2); 
+            font-size: 28px;
+            font-family: 'Fjalla One', sans-serif;
+            margin-bottom: 8px;
+        }
+        h2{
+            color: rgb(2, 2, 2);
+            margin-bottom: 0px;
+            margin-top: 0;
+            font-size: 22px;
+            text-transform: uppercase;
+            font-family: 'Fjalla One', sans-serif;
+        }
+        h3{
+            margin-bottom: 0px;
+        }
+        body{
+            text-align: center;
+            position: relative;
+        }
+        #computadora{
+            margin-top: 100000px;
+        }
+        .covertor {
+            position: absolute;
+            top: 30%;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="libreta" align="center">
+        <div class="covertor">
+            <script>
+                var nombre , dni, horas_trabajadas, pago_hora, sueldo;
+
+                nombre=prompt("Ingresar nombre");
+                dni=prompt("Ingresar DNI");
+                horas_trabajadas=parseInt(prompt("Ingresar horas trabajadas"));
+                pago_hora=parseInt(prompt("Ingresar pago por hora"));
+                sueldo=horas_trabajadas*pago_hora;
+
+                if (horas_trabajadas>40) 
+                {
+                    sueldo=(horas_trabajadas*pago_hora)*115/100;
+                    document.write("<h2>¡TIENE BONO!</h2>");
+                }
+
+                document.write("<h3>NOMBRE EMPLEADO: </h3>"+nombre+"<br>");
+                document.write("<h3>DNI: </h3>"+dni+"<br>"+"<br>");
+                document.write("<h1>SUELDO: "+sueldo+"</h1>");
+            </script>
+        </div>
+        <img src="images/libreta.png" alt="">
+    </div>
+</body>
+</html>
