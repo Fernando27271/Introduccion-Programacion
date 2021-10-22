@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*El programa anterior presenta un inconveniente ya que solo nos muestra un resultado cuando se ingresan números de menor a mayor, por lo que se solicita consistenciar el programa para que al ingresar dos números nos muestre todos los números comprendidos entre ellos inclusive, sea el ingreso de menor a mayor o de mayor a menor.
+*/
+var n1,n2,i;
+n1=parseInt(prompt("Ingrese numero 1"));
+n2=parseInt(prompt("Inrese numero 2"));
+if (n1>n2) 
+{
+    for(i=n2;i<=n1;i++)
+    {
+        document.write(i+"<br>")
+    }
+}
+else
+{
+    if (n2>1) 
+    {
+        for(i=n1;i<=n2;i=i+1)
+        {
+            document.write(i+"<br>")
+        }   
+    }
+}
+    </script>
+</body>
+</html>
