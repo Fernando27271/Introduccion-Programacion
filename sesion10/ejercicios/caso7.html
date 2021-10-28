@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cuadrado {
+            background-color: #9933FF;
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+/*
+La empresa de videojuegos “Ubisoft” solicita al área de producción implementar una aplicación web que permita visualizar una figura geométrica de cuadrados indicando filas y las columnas que se van a mostrar en la página.
+La aplicación web debe permitir que el usuario indique cuántas figuras desea mostrar proporcionando la cantidad de filas y columnas.
+*/
+var canfil,cancol,i,j;
+canfil=parseInt(prompt("Indicar la cantidad de filas"));
+cancol=parseInt(prompt("Indicar la cantidad de columnas"));
+i=1;
+while (i<=cancol) 
+{
+    j=1;
+    while (j<=canfil) 
+    {
+        document.body.innerHTML+="<div class='cuadrado'></div>";
+        j++;
+    }
+    document.body.innerHTML+="<div style='clear:both'></div>";
+    i++;
+}
+    </script>
+</body>
+</html>
