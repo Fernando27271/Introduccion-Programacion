@@ -11,10 +11,10 @@
 /*
 El programa anterior presenta un inconveniente ya que solo nos muestra un resultado cuando se ingresan números de menor a mayor, por lo que se solicita consistenciar el programa para que al ingresar dos números nos muestre todos los números comprendidos entre ellos inclusive, sea el ingreso de menor a mayor o de mayor a menor.
 */
+/*
 var n1,n2,i;
 n1=parseInt(prompt("Ingresar el primer numero"));
 n2=parseInt(prompt("Ingresar el segundo numero"));
-
 if (n1<n2) 
 {
     while (n1<=n2) 
@@ -34,6 +34,33 @@ else
         }
     }
 }
+*/
+var n1,n2,i;
+n1=parseInt(prompt("Ingrese Número 1"));
+n2=parseInt(prompt("Ingrese Número 2"));
+if(n1>n2)
+{
+    i=n2;
+    while(i<=n1)
+    {
+        document.write(i+"<br>");
+        i++;
+    }
+}
+else
+{
+    if(n2>n1)
+    {
+        i=n1;
+        while(i<=n2)
+        {
+            document.write(i+"<br>");
+            i++;
+        }
+    }
+}
+
+
     </script>
 </body>
 </html>
