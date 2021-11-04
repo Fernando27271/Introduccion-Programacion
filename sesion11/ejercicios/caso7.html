@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cuadrado {
+            background-color: cyan;
+            width: 85px;
+            height:85px;
+            float: left;
+            border: solid 1px #1279f8;
+        }
+    </style>    
+</head>
+<body>
+    <script>
+/*
+Nos solicitan realizar un programa para visualizar un triángulo formado por cuadrados, de color celeste y dentro de cada cuadrado una imagen de soldado del futuro; además debe tener unos bordes de color azul.
+*/
+i=1;
+do {
+    j=1;
+    do {
+        document.body.innerHTML += "<div class='cuadrado'><img src='soldado.jpg' width='60px' height='60px'>";
+        j++;
+    } while (j<=i);
+    document.body.innerHTML += "<div style='clear:both;'>";
+    i++;
+} while (i<=10);
+    </script>
+</body>
+</html>

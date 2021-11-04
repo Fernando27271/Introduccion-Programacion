@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+Nos solicitan realizar un programa para que al ingresar dos números nos muestre todos los números comprendidos entre ellos inclusive. Pero en el caso de ser números iguales debe volver a pedir el ingreso de los números estos deben ser diferentes de menor a mayor conveniente.
+*/
+var num1, num2, i;
+num1=parseInt(prompt("Inregar numero 1"));
+num2=parseInt(prompt("Ingresar numero 2"));
+i=num1;
+do {
+    n1=parseInt(prompt("Ingrese de nuevo el numero 1"));
+    num2=parseInt(prompt("Ingrese de nuevo el numero 2"));
+} 
+while (num1==num2)
+i=num1;
+do{
+    document.write(i+"<br>");
+    i++;
+}
+while (i<=num2)
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cuadrado {
+            background-color: orange;
+            width: 50px;
+            height: 50px;
+            float: left;
+            border:solid 1px #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <script>
+/*
+La empresa de Juegos “EL INVENTOR” solicita al área de producción implementar una aplicación web que permita visualizar una figura geométrica de cuadrados y dentro de ellas una imagen de 45px * 45 px
+*/
+i=1;
+do {
+    j=1;
+    do {
+        document.body.innerHTML += "<div class='cuadrado'><img src='corazon.png' width='45px' height='45px'>";
+        j++;
+    } while (j<=10);
+    document.body.innerHTML += "<div style='clear:both;'>";
+    i++;
+} while (i<=10);
+    </script>
+</body>
+</html>

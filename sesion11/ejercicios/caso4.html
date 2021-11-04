@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #circulo {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin: 20px;
+            background-color: blue;
+        }
+        #circulo1 {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin: 20px;
+            float:left;
+            padding:0;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <script>
+/*
+Mostrar 5 círculos que se desplacen hacia abajo y otros 5 círculos se desplacen de derecha a izquierda de color azul y naranja respectivamente.
+*/
+var i=1;
+do {
+    document.body.innerHTML += "<marquee direction='down' width='250' behavior='alternate' SCROLLAMOUNT=5><div id = 'circulo'></marquee>";
+        i++;
+} 
+while (i<=5);
+var j=1;
+do {
+    document.body.innerHTML += "<marquee behavior='alternate' SCROLLAMOUNT=5><div id='circulo1'></marquee>";
+        j++;
+} 
+while (j<=5);
+    </script>
+</body>
+</html>

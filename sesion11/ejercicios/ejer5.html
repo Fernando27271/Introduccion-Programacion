@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+5.	Ingresar 2 números y mostrar el cubo de todos los números impares comprendidos entre ellos inclusive.
+*/
+var num1, num2, potencia, i;
+num1=parseInt(prompt("Inregar numero 1"));
+num2=parseInt(prompt("Ingresar numero 2"));
+i=num1;
+do {
+    if (i%2!=0)
+    {
+        potencia=Math.pow(i,3);
+        document.write(potencia+"<br>");
+    }
+    i++;
+} 
+while (i<=num2);
+    </script>
+</body>
+</html>
