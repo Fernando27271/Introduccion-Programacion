@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .array-c{
+            color: blue;
+            font-size: 40px;
+
+        }
+        .row{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <script>
+/*
+Diseñar una aplicación web que permita almacenar cinco números en el arreglo a y b. Visualizar los valores del arreglo a y b en forma intercalada al arreglo c.
+*/
+a=[];
+b=[];
+c=["1","2","3","4","5"];
+for (j=0;j<=4;j++){
+    numA=prompt('Ingresar un número al array "A"');
+    a.push(numA);   
+}
+for (i=0;i<=4;i++){
+    numB=prompt('Ingresar un número al array "B"');
+    b.push(numB);   
+}
+document.write("<div class='row'>");
+for(l=0;l<=4;l++){
+    document.write("<h1>"+a[l]+"</h1>"+"<h1 class='array-c'>"+c[l]+"</h1>");
+}
+document.write("</div>");
+document.write("<div class='row'>");
+for(m=0;m<=4;m++){
+    document.write("<h1>"+b[m]+"</h1>"+"<h1 class='array-c'> "+c[m]+"</h1>");
+}
+document.write("</div>");
+    </script>
+</body>
+</html>
