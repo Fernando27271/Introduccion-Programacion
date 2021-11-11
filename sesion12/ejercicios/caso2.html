@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size:32px;
+        }
+    </style>
+    <script>
+        function fruta(){
+            var i;
+            var text="<ul>";
+            var frutas=["Platano","Naranja","Manzana","Mango","Fresa","Pera"];
+            for(i=0;i<frutas.length;i++)
+            {
+                text+="<li>"+frutas[i]+"</li>";
+            }
+            text+="</ul>";
+            document.getElementById("demo").innerHTML=text;
+        }
+    </script>
+</head>
+<body>
+    <p>Lista de frutas</p>
+    <button onclick="fruta()">Muestra Lista de Frutas</button>
+    <p id="demo"></p>
+</body>
+</html>

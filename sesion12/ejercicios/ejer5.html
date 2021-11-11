@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .ordenado{
+            color: blue;
+        }
+        .noOrdenado{
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <script>
+/*
+Crear una aplicación web que permita registrar cinco datos dentro de un arreglo de datos y los muestre ordenados.
+*/
+var seleccionPeruana= [];
+for (j=0;j<=4;j++){
+    player=prompt("Esriba el nombre de un jugador peruano");
+    seleccionPeruana.push(player);   
+}
+for(i=0;i<seleccionPeruana.length;i++){
+    document.write("<h1 class='noOrdenado'>"+seleccionPeruana[i]+"</h1>");
+}
+document.write("<br><br><h1 class='ordenado'>NOMBRES ORDENADOS:</h1>");
+for(i=0;i<seleccionPeruana.length;i++){
+    seleccionPeruana.sort();
+    document.write("<h1>"+seleccionPeruana[i]+"</h1>");
+}
+    </script>
+</body>
+</html>
