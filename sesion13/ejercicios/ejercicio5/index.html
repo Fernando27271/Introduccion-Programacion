@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="ordenado.js"></script>
+    <style>
+        .row{
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+        }
+        .col{
+            flex-basis: 0;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col">
+            <h1>NO ORDENADO</h1>
+            <script>no_ordenado();</script>
+        </div>
+        <div class="col">
+            <h1>ORDENADO</h1>
+            <script>ordenado();</script>
+        </div>
+    </div>
+</body>
+</html>

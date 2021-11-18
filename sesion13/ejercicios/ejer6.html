@@ -21,6 +21,7 @@
 /*
 Diseñar una aplicación web que permita almacenar cinco números en el arreglo a y b. Visualizar los valores del arreglo a y b en forma intercalada al arreglo c.
 */
+/*
 a=[];
 b=[];
 c=["1","2","3","4","5"];
@@ -42,6 +43,35 @@ for(m=0;m<=4;m++){
     document.write("<h1>"+b[m]+"</h1>"+"<h1 class='array-c'> "+c[m]+"</h1>");
 }
 document.write("</div>");
+*/
+
+a=[];
+b=[];
+c=[];
+for (j=0;j<=4;j++){
+    numA=prompt('Ingresar un número al array "A"');
+    a.push(numA);
+}
+for (i=0;i<=4;i++){
+    numB=prompt('Ingresar un número al array "B"');
+    b.push(numB);   
+}
+
+acum=0;
+i=0;
+do{
+    c[acum]=a[i];
+    acum++;
+    c[acum]=b[i];
+    i++;
+    acum++;
+}
+while(i<a.length)
+
+for(j=0;j<c.length;j++){
+    document.write("<h1>"+c[j]+"</h1>")
+}
+
     </script>
 </body>
 </html>
