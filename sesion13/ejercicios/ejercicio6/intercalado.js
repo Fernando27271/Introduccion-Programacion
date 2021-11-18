@@ -10,4 +10,18 @@ function intercalado() {
         numB=prompt('Ingresar un número al array "B"');
         b.push(numB);   
     }
+    x=0;
+    i=0;
+    do {
+        c[x]=a[i];
+        x++;
+        c[x]=b[i];
+        x++;
+        i++;
+    } while (i<b.length)
+
+    for(k=0;k<c.length;k++)
+    {
+        document.write("<h1>"+c[k]+"</h1>")
+    }
 }
