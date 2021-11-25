@@ -1,0 +1,18 @@
+body {
+    background-color: #099;
+}
+
+#visor {
+    background-color: #fff;
+    width: 640px;
+    height: 360px;
+    border: solid 10px #555;
+}
+
+#botonCasa, #botonIsla {
+    background-color: #000000;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    float: left;
+}
