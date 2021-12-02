@@ -35,6 +35,9 @@ function sueldo() {
             utilidad=3*sueld;
         }
     }
-    document.write("<H2>SUELDO: "+sueld+"</h2>");
-    document.write("<H2>UTILIDAD: "+utilidad+"</h2>");
+    document.write("<h2>Horas trabajadas: "+htrabajadas+"</h2>");
+    document.write("<h2>Categoría: "+categoria+"</h2>");
+    document.write("<h2>Años de servicio: "+cantan+"</h2><br>");
+    document.write("<h2>SUELDO: "+sueld+"</h2>");
+    document.write("<h2>UTILIDAD: "+utilidad+"</h2>");
 }

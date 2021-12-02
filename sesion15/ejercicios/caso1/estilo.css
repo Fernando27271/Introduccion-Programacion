@@ -1,0 +1,22 @@
+#div1{
+    width: 50%;
+    height: 60%;
+    margin-left: 50%;
+    margin-top: 0.5px;
+    float: left;
+}
+#div2{
+    width: 30%;
+    height: 45%;
+    margin-left: 5%;
+    margin-top: 1px;
+    float: left;
+    position: absolute;
+}
+#fotocambia{
+    width: 50%;
+    height: 50%;
+    margin-left: 5%;
+    margin-top: 1%;
+    border: none;
+}
