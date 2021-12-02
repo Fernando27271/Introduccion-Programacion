@@ -1,0 +1,24 @@
+#r1 {width: 50px;margin-left: 70px;}
+#r2 {width: 50px;margin-left: 100px;}
+#r3 {width: 50px;margin-left: 70px;}
+#r4 {width: 50px;margin-left: 70px;}
+#r5 {width: 50px;margin-left: 70px;}
+#r6 {width: 50px;margin-left: 70px;}
+#img1{
+    width:30%;
+    height:70%; 
+    margin-left:30%;
+    margin-top:40px
+}
+#bt1{
+    width:120px;
+    height:25px; 
+    margin-left:450px;
+}
+#div1{
+    width:99%;
+    height:200px; 
+    margin-left:2px;
+    margin-top:30px;
+    border:solid
+} 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="recurso3.js"></script>
+</head>
+<body>
+    
+    <form>
+        <fieldset>
+            <legend>Elige un color de fondo</legend>
+            <label>
+                <input type="radio" id="r1" name="rad1" value="1">Gris
+            </label>
+            <label>
+                <input type="radio" id="r2" name="rad1" value="2">Celeste
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Elige una ubicación</legend>
+            <label>
+                <input type="radio" id="r3" name="rad2" value="1">Izquierda
+            </label>
+            <label>
+                <input type="radio" id="r4" name="rad2" value="2">Derecha
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Elige un tamaño</legend>
+            <label>
+                <input type="radio" id="r5" name="rad3" value="1">Pequeño
+            </label>
+            <label>
+                <input type="radio" id="r6" name="rad3" value="2">Grande
+            </label>
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <input id="bt1" type="button" onclick="desplaza()" value="Utilizar Vehículo">
+    <div id="div1">
+        <img id="img1" src="img/1.png" />
+    </div>
+</body>
+</html>
